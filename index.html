@@ -5,13 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Currency Converter</title> 
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class="wrapper">
             <header>
-                <img src="img/logo.png" alt="logo">
-                <div class="menu">
-                    <ul>
+                <img id="logo" src="img/logo.png" alt="logo">               
+                    <ul id="menu">
                         <li>БАНК</li>
                         <li>БИЗНЕС</li>
                         <li>ИНВЕСТИЦИИ</li>
@@ -19,42 +19,40 @@
                         <li>МОБАЙЛ</li>
                         <li>ПУТЕШЕСТВИЯ</li>
                         <li>РАЗВЛЕЧЕНИЯ</li>
-                    </ul>
-                </div>
-                <button>ВОЙТИ</button>
+                    </ul>                
+                <button id="log-in">ВОЙТИ</button>
             </header>
             <main>    
-                    <h1>Конвертер валют онлайн</h1>
-                    <div class="lables">
+                <h1>Конвертер валют онлайн</h1>
+                <div class="exchange">    
+                    <div class="left">
                         <p>У меня есть</p>
-                        <p>Хочу приобрести</p>
-                    </div>
-                    <div class="currencies">
-                        <div class="have">
-                            <div class="input-currency">
-                                <button>RUB</button>
-                                <button>USD</button>
-                                <button>EUR</button>
-                                <button>GBP</button>
-                            </div>
-                            <div class="convers-currency">
-                                <button>RUB</button>
-                                <button>USD</button>
-                                <button>EUR</button>
-                                <button>GBP</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="money">
+                        <ul class="input-currency">
+                            <li>RUB</li>
+                            <li>USD</li>
+                            <li>EUR</li>
+                            <li>GBP</li>
+                        </ul>
                         <div class="input-summ">
                             <input type="number" id="money-in"> 
-                            <output name="rate-in"></output>      
-                        </div>
-                        <div class="convers-summ">
-                            <output name="money-out"></output>
-                            <output name="rate-out"></output>                          
+                            <p>1 RUB = 0.0135 USD</p>      
                         </div>
                     </div>
+                    <div class="right">
+                        <p>Хочу приобрести</p>
+                        <ul class="convers-currency">
+                            <li>RUB</li>
+                            <li>USD</li>
+                            <li>EUR</li>
+                            <li>GBP</li>
+                        </ul>                       
+                        <div class="convers-summ">
+                            <output id="money-out">67.6685</output>
+                            <p>1 USD = 73.8896 RUB</p>                          
+                        </div>
+                    </div>
+                </div>
+                
                 
             </main>
         </div>
