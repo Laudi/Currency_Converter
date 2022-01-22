@@ -1,0 +1,29 @@
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+
+    min-width: 1152px;
+    min-height: 700px;
+    background-color: green;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F5F5F6;
+}
+
+.menu {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+li {
+    color: #959BA4;
+}
